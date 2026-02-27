@@ -1,0 +1,14 @@
+# Ignore Python cache files
+__pycache__/
+*.pyc
+
+# Ignore raw data files (We only need the trained model!)
+RealWorldLive/Person*/
+RealWorldLive/synthetic_data/
+
+# Ignore the live incoming data buffer
+received_gait.csv
+
+# Ignore virtual environments
+venv/
+env/
