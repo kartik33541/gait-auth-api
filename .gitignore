@@ -3,9 +3,15 @@ __pycache__/
 *.pyc
 
 # --- DATA MANAGEMENT ---
-# We WANT to push Person 1-10, so we do NOT ignore them.
-# We IGNORE the massive generated folder to keep GitHub light.
+# Ignore ALL person data folders (Person1, Person2, etc.)
+RealWorldLive/Person*/
+
+# Ignore the massive generated synthetic folder
 RealWorldLive/synthetic_data/
+
+# --- ALLOW THE MODEL ---
+# This ensures your trained .keras or .pkl files are still uploaded
+!RealWorldLive/model/
 
 # Ignore the live incoming data buffer from the phone
 received_gait.csv
