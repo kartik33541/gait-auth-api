@@ -2,13 +2,18 @@
 __pycache__/
 *.pyc
 
-# Ignore raw data files (We only need the trained model!)
-RealWorldLive/Person*/
+# --- DATA MANAGEMENT ---
+# We WANT to push Person 1-10, so we do NOT ignore them.
+# We IGNORE the massive generated folder to keep GitHub light.
 RealWorldLive/synthetic_data/
 
-# Ignore the live incoming data buffer
+# Ignore the live incoming data buffer from the phone
 received_gait.csv
 
 # Ignore virtual environments
 venv/
 env/
+
+# Ignore IDE settings
+.vscode/
+.idea/
